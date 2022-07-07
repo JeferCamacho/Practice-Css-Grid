@@ -1,0 +1,59 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: hsl(50, 0%, 50%);
+  color: hsl(0, 0%, 0%);
+}
+
+.container {
+  width: 90%;
+  max-width: 1000px;
+  margin: 20px auto;
+  /*  Organizar los elementos */
+  display: grid;
+  /* Margin es igual al gap es una espaciado */
+  grid-gap: 20px;
+
+  /*Columas   de la pagina*/
+  grid-template-columns: repeat(3, 1fr);
+  /*Filas   de la pagina*/
+  grid-template-rows: repeat(4, auto);
+
+  background-color: hsl(0, 0%, 51);
+
+  border-radius: 50px;
+}
+
+.container--header {
+  background-color: rgb(22, 31, 64);
+  border-radius: 10px;
+}
+
+.container--main {
+  background-color: hsla(6, 100%, 50%, 0.5);
+  border-radius: 10px;
+  overflow: auto;
+}
+
+.container--aside {
+  background-color: hsla(120, 100%, 50%, 0.5);
+  border-radius: 10px;
+}
+
+.container--widget1 {
+  background-color: hsla(50, 100%, 50%, 0.5);
+  border-radius: 10px;
+}
+
+.container--widget2 {
+  background-color: hsla(90, 100%, 50%, 0.5);
+  border-radius: 10px;
+}
+
+.container--footer {
+  background-color: hsla(170, 100%, 50%, 0.5);
+  border-radius: 10px;
+}
